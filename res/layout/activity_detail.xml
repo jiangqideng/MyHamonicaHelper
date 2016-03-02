@@ -1,0 +1,73 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="简谱转调助手"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+         />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_launcher"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+         />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\nV1.1" 
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:textSize="10sp"
+        />
+
+    <TextView
+        android:id="@+id/text5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="    一款简易的简谱转调软件，快速输入简谱，即可转换成任意调号。本应用为广大菜鸟级的乐器爱好者打造，不需要丰富的乐理知识，能看懂简谱就ok！输入你最爱的曲谱，尝试演奏不同的调吧！"
+        android:gravity="fill_horizontal"
+        android:textSize="15sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+
+    <TextView
+        android:id="@+id/text4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="初次开发，不足之处，敬请谅解！\n欢迎大家提出优化建议：jqideng@tju.edu.cn"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:textSize="12sp"
+         />
+	<TextView
+        android:id="@+id/text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="特别鸣谢：北洋口琴协会"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#A020F0"
+        android:textSize="12sp"
+         />
+
+
+
+</LinearLayout>

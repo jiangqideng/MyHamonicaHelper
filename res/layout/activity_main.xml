@@ -1,0 +1,377 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_main"
+    android:orientation="vertical"
+    android:id="@+id/mainLayout"
+     >
+
+   <RelativeLayout
+        android:id="@+id/inputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0sp" 
+        android:layout_weight="14"
+
+        >
+
+       
+	<Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="100sp"
+            
+			android:layout_alignParentLeft="true"
+			android:gravity="center"
+			android:layout_alignParentTop="true"
+			android:layout_height="50sp"
+            />
+	<TextView
+	    android:id="@+id/textView3"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBottom="@id/spinner1"
+	    android:layout_alignParentTop="true"
+	    android:background="@drawable/bg_setting1"
+	    />
+	
+	<TextView
+	    android:id="@+id/buttonToSpinner1"
+	    android:layout_width="100sp"
+	    android:layout_height="wrap_content"
+	    android:text="C调"
+	    android:layout_alignLeft="@id/spinner1"
+	    android:layout_alignBaseline="@id/spinner1"
+		android:gravity="center"
+		android:background="@drawable/button_to_spinner"
+	     />    
+
+	<ToggleButton
+	    android:id="@+id/toggleButton1"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentRight="true"
+	    android:layout_alignBaseline="@id/spinner1"
+	    android:textOn="模式二"
+	    android:textOff="模式一"
+	    android:background="@drawable/type"
+	    android:textSize="12sp"
+	     />
+	<TextView
+		    android:id="@+id/textView7"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_toLeftOf="@id/toggleButton1"
+		    android:text="50%" 
+		    android:gravity="center"
+		    android:layout_alignBaseline="@id/buttonToSpinner1"
+		    />
+
+
+
+	<SeekBar
+	    android:id="@+id/seekBar1"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content" 
+	    android:layout_toRightOf="@id/buttonToSpinner1"
+	    android:layout_toLeftOf="@id/textView7"
+	    android:max="100"
+	    android:progress="50"
+	    
+	    />
+
+
+
+	<Button
+        android:id="@+id/button_firstStart1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\n使用说明\n  第一步:点击上方按钮 , \n 选择输入简谱的调号  \n下一步...\n"
+        android:layout_alignParentLeft="true"
+		android:layout_below="@id/textView3"
+		android:background="@drawable/bg_num_button"
+		android:tag="1"
+		android:visibility="invisible"
+         />
+		<Button
+        android:id="@+id/button_firstStart3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\n使用说明\n  第三步:点击上方按钮 , \n 选择想要转换的调号  \n"
+        android:layout_alignParentLeft="true"
+		android:layout_below="@id/textView3"
+		android:background="@drawable/bg_num_button"
+		android:tag="3"
+		android:visibility="invisible"
+         />
+		<Button
+        android:id="@+id/button_firstStart2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\n使用说明\n  第二步:点击下方软键盘,选 \n  择音高与变化音，输入简谱   \n"
+        android:layout_alignParentBottom="true"
+		android:layout_alignParentRight="true"
+		android:background="@drawable/bg_num_button"
+		android:tag="2"
+		android:visibility="invisible"
+         />
+	<Button
+        android:id="@+id/button_firstStart4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\n小提示：\n  这里可以调节音符  \n  尺寸及选择模式。\n"
+        android:layout_below="@id/textView3"
+		android:layout_alignParentRight="true"
+		android:background="@drawable/bg_num_button"
+		android:tag="4"
+		android:visibility="invisible"
+         />
+
+    </RelativeLayout>
+
+	<RelativeLayout
+	    android:id="@+id/outputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0sp" 
+        android:layout_weight="0"
+        >
+
+	<Spinner
+            android:id="@+id/spinner2"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true"
+			android:gravity="center"
+			android:layout_alignParentTop="true"
+            />
+	<TextView
+	    android:id="@+id/textView5"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBottom="@id/spinner2"
+	    android:layout_alignParentTop="true"
+	    android:background="#114682b4"
+	    />
+	<TextView
+	    android:id="@+id/buttonToSpinner2"
+	    android:layout_width="100sp"
+	    android:layout_height="wrap_content"
+	    android:text="C调"
+	    android:layout_alignLeft="@id/spinner2"
+	    android:layout_alignParentTop="true"
+		android:gravity="center"
+		android:background="@drawable/button_to_spinner"
+	     />  
+
+
+
+		
+	</RelativeLayout>
+
+	<RelativeLayout
+	    android:id="@+id/buttonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0sp" 
+        android:layout_weight="7">
+        <Button
+            android:id="@+id/buttonBackSpace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/bg_num_button"
+            android:text="←" />
+
+        <Button
+            android:id="@+id/buttonSpace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/buttonBackSpace"
+            android:layout_toLeftOf="@id/buttonBackSpace"
+            android:text="_" 
+            android:tag="0"
+            android:background="@drawable/bg_num_button"
+            android:onClick="numClick"/>
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/buttonSpace"
+            android:layout_toLeftOf="@id/buttonSpace"
+            android:text="7"
+            android:tag="7"
+            android:onClick="numClick"
+            android:background="@drawable/bg_num_button"
+             />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/button7"
+            android:layout_alignLeft="@id/button7"
+            android:text="4" 
+            android:tag="4"
+            android:background="@drawable/bg_num_button"
+            android:onClick="numClick"/>
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/button4"
+            android:layout_toRightOf="@id/button4"
+            android:text="5" 
+            android:tag="5"
+            android:background="@drawable/bg_num_button"
+            android:onClick="numClick"/>
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/button5"
+            android:layout_toRightOf="@id/button5"
+            android:text="6"
+            android:tag="6" 
+            android:background="@drawable/bg_num_button"
+            android:onClick="numClick"/>
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/button6"
+            android:layout_alignLeft="@id/button6"
+            android:text="3" 
+            android:tag="3"
+            android:background="@drawable/bg_num_button"
+            android:onClick="numClick"/>
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/button3"
+            android:layout_toLeftOf="@id/button3"
+            android:text="2" 
+            android:tag="2"
+            android:background="@drawable/bg_num_button"
+            android:onClick="numClick"/>
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/button2"
+            android:layout_toLeftOf="@id/button2"
+            android:text="1"
+            android:tag="1" 
+            android:background="@drawable/bg_num_button"
+            android:onClick="numClick"/>
+
+
+
+        <RadioGroup
+            android:id="@+id/radioGroup1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true" 
+            >
+
+            <RadioButton
+                android:id="@+id/radio0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="高音"
+                android:background="@drawable/radio"
+                android:button="@null"
+                android:gravity="center"
+                />
+
+            <RadioButton
+                android:id="@+id/radio1"
+                android:checked="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="中音"
+                android:gravity="center"
+                android:background="@drawable/radio"
+                android:button="@null"
+                 />
+
+            <RadioButton
+                android:id="@+id/radio2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="低音"
+                android:background="@drawable/radio"
+                android:button="@null"
+                android:gravity="center"
+                 />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="1sp"
+            android:layout_height="wrap_content"
+            android:background="#20B2AA"
+            android:layout_toRightOf="@id/radioGroup1"
+            android:layout_alignTop="@id/radioGroup1"
+            android:layout_alignBottom="@id/radioGroup1"
+		 />
+
+<RadioGroup
+    android:id="@+id/radioGroup2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+	android:layout_toRightOf="@id/textView4"
+	android:layout_alignParentBottom="true"
+    >
+
+    <RadioButton
+        android:id="@+id/radio3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="升"
+        android:background="@drawable/radio"
+        android:button="@null"
+        android:gravity="center"
+         />
+
+    <RadioButton
+        android:id="@+id/radio4"
+        android:checked="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="正常" 
+        android:background="@drawable/radio"
+        android:button="@null"
+        android:gravity="center"
+        />
+
+    <RadioButton
+        android:id="@+id/radio5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="降" 
+        android:gravity="center"
+        android:background="@drawable/radio"
+        android:button="@null"
+        />
+</RadioGroup>
+
+
+
+    </RelativeLayout>
+
+	
+	<RelativeLayout
+	    android:id="@+id/extraLayout"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	     >
+	</RelativeLayout>
+	
+	
+</LinearLayout>

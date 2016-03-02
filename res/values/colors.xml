@@ -1,0 +1,5 @@
+<!--?xml version=1.0 encoding=utf-8?-->
+<resources>
+    <color name="music_note_output_color">#7700ff00</color>
+    <color name="music_note_input_color">#7700ff00</color>
+</resources>
