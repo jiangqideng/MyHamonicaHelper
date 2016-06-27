@@ -39,7 +39,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:text="    一款简易的简谱转调软件，快速输入简谱，即可转换成任意调号。本应用为广大菜鸟级的乐器爱好者打造，不需要丰富的乐理知识，能看懂简谱就ok！输入你最爱的曲谱，尝试演奏不同的调吧！"
+        android:text="    一款简易的简谱转调软件，快速输入简谱，即可转换成任意调号。本应用为广大菜鸟级的乐器爱好者打造，不需要丰富的乐理知识，能看懂简谱就ok！输入你最爱的曲谱，尝试演奏不同的调吧！（主界面连续输入425425可解除广告）"
         android:gravity="fill_horizontal"
         android:textSize="15sp"
         android:layout_marginLeft="10dp"
